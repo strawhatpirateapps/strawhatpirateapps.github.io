@@ -1,0 +1,52 @@
+p {
+    color: #444444;
+}
+
+.blog-header p {
+    font-size: 1.8em;
+}
+
+.blog-content p {
+    font-size: 1.2em;
+    line-height: 1.58;
+    padding: 0 80px;
+    margin-top: 35px;
+    letter-spacing: -.003em;   
+}
+
+.blog-index p {
+    padding: 0 80px;
+    font-size: 1.4em;
+}
+
+a, .btn-view-full-menu {
+    color: #F57C00;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+quote {
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: serif;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    transition: margin .1s;
+}
+
+@media only screen and (max-width: 29.9375em) {
+    .wrapper {
+        max-width: 90%;
+    }
+
+    .blog-content p {
+        padding: 0 10px;
+    }
+
+    .blog-index p {
+        padding: 0 10px;
+    }
+}
