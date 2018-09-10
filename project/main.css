@@ -590,12 +590,12 @@ body > div#toast:target > a {
 		margin-top: 112px;
 	}
 }
-
+4285f4
 @media screen and (min-height: 720px) and (min-width: 500px) {
 	body > div#content {
 		margin-top: 128px;
 	}
-}body .color { background: #4285f4 !important }
-body > div#navbar { border: 1px solid #4285f4; color: #4285f4 !important }
-body > div#navbar > a#open > div { color: #4285f4 !important }
-body > div#navbar > div#nav > div > a#current { color: #4285f4 !important }
+}body .color { background: #ffae19 !important }
+body > div#navbar { border: 1px solid #ffae19; color: #ffae19 !important }
+body > div#navbar > a#open > div { color: #ffae19 !important }
+body > div#navbar > div#nav > div > a#current { color: #ffae19 !important }
