@@ -4,9 +4,9 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import url(extends.css);
 @import url(shadows.css);
-/*
+
 .class {
-	position:relative;
+	/*position:relative;
 	top: 50%;
 	width: 24cm;
 	margin: 0 auto;
@@ -14,10 +14,10 @@
 	font-size: 220%;
 	text-align: center;
 	white-space: nowrap;
-	overflow: hidden;transform: translateY(-50%);
+	overflow: hidden;transform: translateY(-50%);*/
 	font-family: 'Anonymous Pro', monospace;
 }
-
+/*
 .anim-typewriter {
 	animation: typewriter 4s steps(40) 1s 1 normal both,
 	blinkTextCursor 250ms steps(40) infinite normal;
