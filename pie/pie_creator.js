@@ -99,7 +99,7 @@ historical_records = {
 	2037: 'Wrench and Smith, 1949, with ENIAC'
 }
 
-var superscript_numbers = '15';
+var superscript_numbers = 'â°Â¹Â²Â³â´âµâ¶â·â¸â¹';
 // write a number in superscript digits
 function superscript(n) {
 	var s = n.toString();
