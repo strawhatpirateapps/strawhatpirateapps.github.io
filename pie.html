@@ -10,7 +10,13 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="pie/pie.png">
   
 		<title>A KJGHPILLION digits of pi</title>
-
+		<script>
+		#grad {
+		background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+		</script>
 		<!-- jquery -->
 		<script type="text/javascript" src="pie/jquery.js"></script>
 
@@ -18,7 +24,7 @@
 		<script type="text/javascript" src="pie/pie_creator.js"></script>
 		<link rel="stylesheet" href="pie/css.css"></link>
 	</head>
-	<body>
+	<body id="grad">
 	<h1 id="header"><span class="π">owo(pie)π</span>≈ 3.</h1>
 	<ul id="digits">
 	</ul>
