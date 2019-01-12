@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:700');
+@font-face {
+  font-family: Porter;
+  src: url('https://zephyo.github.io/22Days/code/15/graphics/Porter Bold.ttf');
+}
+@font-face {
+  font-family: SanFranciscoText;
+  src: url('https://zephyo.github.io/22Days/code/15/graphics/SanFranciscoText-Thin.otf');
+}
+@font-face {
+  font-family: Klaxons;
+  src: url('https://zephyo.github.io/22Days/code/15/graphics/Klaxons.otf');
+}
+* {
+  box-sizing: border-box;
+}
+html, body, .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+body {
+  font-family: 'VT323', monospace;
+  font-size: 1rem;
+  text-align: center;
+}
+.container {
+  overflow-y: scroll;
+}
+.container section {
+  padding: 3rem;
+}
+.container section:first-child {
+  padding-top: 8rem;
+}
+.text {
+  display: inline-block;
+  font-size: 3rem;
+  z-index: 10;
+}
+.enter .rainbow .text {
+  animation: scrunch 0.3s ease 0.1s both;
+}
+.container .rainbow {
+  padding-bottom: 1.875rem;
+  background: linear-gradient(to right, #ef9e9d, #fff989, #b6fcfe);
+  background-size: 400% 400%;
+  animation: grad-bg 20s ease infinite;
+}
+.container .rainbow .text {
+  color: #eed2ff;
+  font-family: 'Porter';
+  line-height: 3.6rem;
+  transform: skew(-5.5deg);
+  text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black, -5px -5px #d2e9ff, -6px -6px black, -4px -4px black, -6px -4px black, -4px -6px black, -10px -10px #cfffcf, -11px -11px black, -9px -9px black, -11px -9px black, -9px -11px black, -15px -15px #fff8ae, -16px -16px black, -14px -14px black, -16px -14px black, -14px -16px black, -20px -20px #ffb9d1, -21px -21px black, -19px -19px black, -21px -19px black, -19px -21px black, 9px 0px white, 8px 1px white, 7px 2px white, 7px 3px white, 6px 4px white, -6px 2px white, 6px 6px white, 0px 6px white, -6px 6px white, -6px 0px white, -10px -10px white, -12px -23px white, -9px -20px white, -6px -18px white, -2px -14px white, 2px -10px white, 5px -7px white, 7px -3px white, -20px -14px white, -2px -14px white, -17px -26px white, -20px -26px white, -12px -20px white, -27px -23px white, -26px -20px white, -25px -18px white, -24px -17px white, -24px -15px white, -22px -13px white, -20px -10px white, -18px -8px white, -16px -7px white, -15px -3px white, 2px 2px 22px black, -22px -22px 22px black, -18px -12px 22px black, -5px -15px 22px black;
+  /* Outline */
+  /* Color 1 */
+  /* Outline */
+  /* Color 2 */
+  /* Outline */
+  /* Color 3 */
+  /* Outline */
+  /* Color 4 */
+  /* Outline */
+  /* Sticker */
+  /*Shadow*/
+}
+.enter .msg .text {
+  animation: pop 0.3s cubic-bezier(0.36, -0.04, 0.15, 1.64) 0.2s both;
+}
+.container .msg span {
+  font-family: 'SanFranciscoText';
+}
+.container .msg .text {
+  transform-origin: bottom right;
+  color: white;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 0.7rem 1.1rem 0.7rem 0.9rem;
+}
+.container .msg .text:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0497dc;
+  border-radius: 1.1rem;
+  box-shadow: 0 0.5rem 4rem -0.7rem rgba(4, 151, 220, 0.9);
+}
+.container .msg .text:after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  right: -16px;
+  bottom: -3px;
+  border-bottom: 8px solid #0497dc;
+  transform: rotate(60deg);
+}
+.container .msg .sub {
+  text-align: right;
+  color: grey;
+  position: absolute;
+  width: 5rem;
+  right: 0;
+  bottom: -1.2rem;
+  font-size: 0.9rem;
+}
+.enter .neon .text {
+  animation: emerge-glow 0.6s ease 0.4s both;
+}
+.container .neon {
+  background: #141114;
+  background-image: url('https://zephyo.github.io/22Days/code/15/graphics/brick-wall.svg'), radial-gradient(ellipse 40% 80% at 50% 60%, #6b1839, #141114);
+}
+.container .neon .text {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-family: 'Klaxons';
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483, 5px 0.3rem 0.5rem rgba(107, 24, 57, 0.5);
+}
+.container .neon .text .blink {
+  animation: blink 4s ease infinite;
+}
+.container .neon .text .blink:nth-child(odd) {
+  animation-delay: 2s;
+}
+.container .neon .text .blink:nth-child(even) {
+  animation-delay: 1s;
+}
+.enter .bw .text:before, .enter .bw .text:after {
+  animation: widen 0.4s ease 0.5s both;
+}
+.container .bw .text {
+  font-family: 'Arial Black', sans serif;
+  transform: skew(-7deg);
+  color: white;
+  position: relative;
+}
+.container .bw .text:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: -1.3rem;
+  bottom: -1.6rem;
+  left: -1.6rem;
+  right: -1.6rem;
+  background: grey;
+  box-shadow: inset 0 0 0 0.4rem grey, inset 0 0 0 0.8rem white;
+  transform: skew(7deg);
+}
+.container .bw .text:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: -1.3rem;
+  bottom: -1.6rem;
+  left: -1.6rem;
+  right: -1.6rem;
+  background-image: url('https://zephyo.github.io/22Days/code/15/graphics/abstract.jpg');
+  background-size: cover;
+  mix-blend-mode: color-burn;
+  transform: skew(7deg);
+}
+.enter .arc .text {
+  animation: widen-spacing 0.5s ease 0.7s both;
+}
+.container .arc {
+  padding: 1rem;
+  background-color: #afe2ff;
+  background-image: url('https://zephyo.github.io/22Days/code/15/graphics/graph-paper.svg');
+  background-size: 170px;
+}
+.container .arc svg {
+  width: 550px;
+}
+.container .arc .text {
+  fill: white;
+  font-family: 'News Cycle', sans-serif;
+  letter-spacing: 0.3rem;
+  text-shadow: #74bbe3 -1px 0px, #74bbe3 -2px 0px, #74bbe3 -3px 1px, #74bbe3 -4px 2px;
+}
+.text-group {
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 12px 50px 12px 50px;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  box-shadow: 0 -0.2rem 2rem rgba(248, 74, 104, 0.5);
+}
+.text-group input {
+  font-family: inherit;
+  flex: auto;
+  font-size: inherit;
+  padding: 10px 10px 10px 5px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #f84a68;
+}
+.text-group input:focus {
+  outline: none;
+}
+.text-group .bar {
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 50px;
+  bottom: 2vh;
+  background: #f84a68;
+  transition: 0.2s ease all;
+}
+.text-group input:focus ~ .bar {
+  width: calc(100% - 215px);
+}
+.text-group button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f7dbe0;
+  color: #f84a68;
+  padding: 10px;
+  margin-left: 15px;
+  width: 100px;
+  border-color: #f84a68;
+  border-style: outset;
+}
+@keyframes grad-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes scrunch {
+  0% {
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black, -2px -2px #d2e9ff, -4px -4px #cfffcf, -15px -15px #fff8ae, -20px -20px #ffb9d1;
+    /* Outline */
+    /* Color 1 */
+    /* Color 2 */
+    /* Color 3 */
+    /* Color 4 */
+  }
+}
+@keyframes blink {
+  0%, 22% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483, 5px 0.3rem 0.5rem rgba(107, 24, 57, 0.5);
+  }
+  28%, 33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  36%, 75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483, 5px 0.3rem 0.5rem rgba(107, 24, 57, 0.5);
+  }
+  82%, 97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+@keyframes emerge-glow {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483, 5px 0.3rem 0.5rem rgba(107, 24, 57, 0.5);
+  }
+}
+@keyframes widen {
+  0% {
+    right: 150%;
+  }
+}
+@keyframes widen-spacing {
+  0% {
+    opacity: 0;
+    letter-spacing: -1rem;
+  }
+}
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.66);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
