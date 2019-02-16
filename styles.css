@@ -1,3 +1,8 @@
+@font-face {
+  font-family: sans;
+  src: url('fonts/sans.ttf');
+}
+
 .portfolio-header {
   position: relative;
   background-image: url(v3/images/header-bg.jpg);
